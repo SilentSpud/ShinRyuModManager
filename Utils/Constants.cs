@@ -11,6 +11,8 @@ namespace Utils
         public const string MLO = "YakuzaParless.mlo";
         public const string ASI = "YakuzaParless.asi";
         public const string DINPUT8DLL = "dinput8.dll";
+        public const string D3D9DLL = "d3d9.dll";
+        public const string D3D11DLL = "d3d11.dll";
         public const string VERSIONDLL = "version.dll";
         public const string WINMMDLL = "winmm.dll";
         public const string WINMMLJ = "winmm.lj";
