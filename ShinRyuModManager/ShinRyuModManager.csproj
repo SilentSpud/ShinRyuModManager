@@ -2,14 +2,13 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netframework4.8</TargetFramework>
+    <TargetFramework>net48</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <UseWPF>true</UseWPF>
     <StartupObject>ShinRyuModManager.Program</StartupObject>
-    <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
     <ApplicationIcon>Resources\Icons\SRMM_icon.ico</ApplicationIcon>
     <AssemblyName>ShinRyuModManager</AssemblyName>
-    <Platforms>AnyCPU;x64</Platforms>
+    <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -57,16 +56,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Costura.Fody" Version="5.7.0">
+    <PackageReference Include="Costura.Fody" Version="6.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="ini-parser" Version="2.5.2" />
-    <PackageReference Include="MdXaml" Version="1.26.0" />
+    <PackageReference Include="MdXaml" Version="1.27.0" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="SharpVectors" Version="1.8.2" />
+    <PackageReference Include="SharpVectors" Version="1.8.4.2" />
     <PackageReference Include="SharpZipLib" Version="1.4.2" />
-    <PackageReference Include="YamlDotNet" Version="13.7.1" />
+    <PackageReference Include="System.Memory" Version="4.6.0" />
+    <PackageReference Include="YamlDotNet" Version="16.3.0" />
+    <PackageReference Include="Yarhl" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -77,9 +78,6 @@
   <ItemGroup>
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="Yarhl">
-      <HintPath>..\Dependencies\Yarhl.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>
